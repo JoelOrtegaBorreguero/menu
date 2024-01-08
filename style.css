@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    }
+
+
+.encabezado {
+    position: sticky;
+    font-size: 1.5em;
+    top: 0;
+    bottom: 1;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    z-index: 999;
+}
+
+.home {
+    margin-left: 15px;
+    border: 2px solid white;
+    padding: 2px;
+    width: 120px;
+}
+
+.home .submenu {
+    display: none;
+}
+
+.services {
+    border: 2px solid white;
+    padding: 2px;
+    width: 120px;
+}
+
+.services .submenu {
+    display: none;
+}
+
+.about {
+    border: 2px solid white;
+    padding: 2px;
+    width: 120px;
+}
+
+.about .submenu {
+    display: none;
+}
+
+.home:hover .submenu {
+    position: absolute;
+    display: block;
+    background-color: black;
+    width: 120px;
+}
+
+.services:hover .submenu {
+    position: absolute;
+    display: block;
+    background-color: black;
+    width: 120px;
+}
+
+.about:hover .submenu {
+    position: absolute;
+    display: block;
+    background-color: black;
+    width: 120px;
+}
+
+
+.item {
+    margin: 0;
+    background-color: black;
+    border: 1px solid white;
+}
+
+
+.foto-1 {
+    font-size: 1.25em;
+    background-image: linear-gradient( 135deg, #00B7D4, #505488, #2F3F80, #161569, #5A4894, #FF7CAE);    position: absolute;
+    position: relative;
+    margin: auto;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1028px;
+    width: 1028px;
+}
+
+.foto-1 .img-texto {
+    background-color: white;
+    position: absolute;
+    margin: auto;
+    top: 1;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    border: 2px solid black;
+    width: 512px;
+    height: 200px;
+    padding: 15px;
+    text-align: justify;
+}
+
+.contenido {
+    padding-left: 30px;
+    padding-top: 50px;
+    background-color: black;
+    font-size: 1.25em;
+    position: relative;
+    top: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+
+}
+
+.contenido .item-p {
+    border: solid 2px white;
+    background-color: white;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 2px 5px 10px white;
+    text-align: justify;
+}
+
+.bola {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 900px;
+}
